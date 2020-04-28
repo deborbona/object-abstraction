@@ -1,0 +1,48 @@
+body {
+  background-image: url('fuzzy.jpg');
+  background-repeat: repeat;
+  background-size: 20%;
+}
+
+* {
+  color: #8B4513;
+  font-size: 3rem;
+  font-family: 'Comic Neue', cursive;
+  font-weight: bold;
+}
+
+#button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contentGrid{
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 2vmin;
+  grid-row-gap: 2vmin;
+}
+
+@keyframes colourChange {
+  from {background-color: #CCCCFF;}
+  to {background-color:#ffb347;}
+}
+
+.honey {
+  font-size: 50pt;
+  font-style: italic;
+  font-family: sans-serif;
+  transition: width 1s, height 1s, transform 1s;
+}
+
+.honey:hover {
+  transform: rotate(180deg);
+}
